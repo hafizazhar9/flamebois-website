@@ -11,7 +11,13 @@ const server = express()
 
 // Middleware
 server.use(bodyParser.json())
-server.use(cors({ credentials: true }))
+server.use(cors(
+  { 
+    origin: ["https:flamebois-websitem.vercel.app"],
+    methods: ["POST", "GET"]
+    credentials: true
+  }
+))
 server.use(authMiddleware.initialize)
 
 // Routes
