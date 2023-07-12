@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 mongoose.Promise = global.Promise
 
-mongoose.connect("mongodb://127.0.0.1:27017/RoomBooking2", )
+mongoose.connect("mongodb+srv://hafizzhar99:<password>@cluster0.cofjy4n.mongodb.net/?retryWrites=true&w=majority", )
   .then(() =>
     console.log(
       `Successfully Connected To MongoDB`
